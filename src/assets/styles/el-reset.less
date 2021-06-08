@@ -1,0 +1,37 @@
+//<!--
+// * @Description: 全局element样式表，全局加上#app,局部加上局部的选择器（必须）,全局和局部有冲突，局部需要加上 !important
+// * @FilePath:
+// * @Author: 杨世林
+// * @Date: 2021-05-03 14:46:16
+// * @LastEditTime:
+//-->
+#app{
+  .el-tag {
+    text-align: center;
+    margin: 0 5px 5px 0;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+  }
+}
+//头部的子菜单的选择标签
+.header-container {
+  .el-tag {
+    width: calc((100% - 10px) / 3) ;
+    height: 22px ;
+    line-height: 22px;
+    &:nth-child(3n) {
+      margin-right: 0 !important;
+    }
+    &.active {
+      background-color: yellow ;
+    }
+  }
+}
+
+
+
+
